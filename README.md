@@ -1,48 +1,46 @@
-# Astro Starter Kit: Basics
+# SnapStyle
 
-```sh
-npm create astro@latest -- --template basics
-```
+SnapStyle es una aplicación web que permite a diseñadores y creativos generar paletas de colores inspiradoras a partir de cualquier imagen que suban.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Características
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+- **Subida de imagen:** El usuario puede cargar una imagen desde su dispositivo.
+- **Extracción de paletas:** Utiliza la API de Color Thief para extraer los colores dominantes (hasta 5) de la imagen.
+- **Animaciones:** GSAP anima la aparición de cada muestra de color para una experiencia visual atractiva.
+- **Modo claro/oscuro:** Detecta la preferencia del sistema o permite alternar manualmente entre temas.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Tecnologías usadas
 
-## 🚀 Project Structure
+- **Astro:** Framework para generar contenido estático y componentes ligeros.
+- **Tailwind CSS:** Sistema de utilidades CSS para estilos rápidos y responsivos.
+- **GSAP:** Librería para animaciones de alta performance.
+- **Color Thief API:** Herramienta para extraer paletas de color de imágenes.
+- **JavaScript:** Lógica de extracción, animación y gestión de estado de tema.
 
-Inside of your Astro project, you'll see the following folders and files:
+## Instalación
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+1. Clona el repositorio:
+   ```bash
+   git clone https://github.com/klovert/snapstyle.git
+   cd snapstyle
+   ```
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Uso
 
-## 🧞 Commands
+1. Ejecuta el servidor de desarrollo:
+   ```bash
+   npm run dev
+   ```
+2. Abre tu navegador en `http://localhost:3000`.
+3. Sube una imagen para ver la paleta de colores extraída.
+4. Usa el botón de tema para alternar entre modo claro y oscuro.
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+¡Listo! Con SnapStyle puedes inspirarte y crear combinaciones de colores de forma rápida y divertida.
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
